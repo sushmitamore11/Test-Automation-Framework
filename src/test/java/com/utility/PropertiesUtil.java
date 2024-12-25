@@ -19,7 +19,7 @@ public class PropertiesUtil {
 		try {
 			fileReader = new FileReader(propFile);
 			properties.load(fileReader);
-
+ 
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
