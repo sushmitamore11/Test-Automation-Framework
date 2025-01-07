@@ -7,7 +7,7 @@
 	<test name="UI Automation Test">
 		<parameter name="browser" value="${browser}" />
 		<parameter name="isLambdaTest" value="${isLambdaTest}" />
-		<parameter name="isHeadlesss" value="${isHeadlesss}" />
+		<parameter name="isHeadless" value="${isHeadless}" />
 		<classes>
 			<class name="com.ui.tests.LoginTest" />
 			<class name="com.ui.tests.InvalidCredsLoginTest" />

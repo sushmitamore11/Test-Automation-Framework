@@ -25,7 +25,7 @@ public class TestBase {
 	public void setUp(
 			@Optional("chrome") String browser, 
 			@Optional("false") boolean isLambdaTest,
-			@Optional("false") boolean isHeadlesss,
+			@Optional("false") boolean isHeadless,
 			ITestResult result) {
 
 		this.isLambdaTest = isLambdaTest;
@@ -37,7 +37,7 @@ public class TestBase {
 		} else {
 			// Running the test on local machine - default setup
 			logger.info("Load the Homepage of the website");
-			homePage = new HomePage(Browser.valueOf(browser.toUpperCase()), isHeadlesss);
+			homePage = new HomePage(Browser.valueOf(browser.toUpperCase()), isHeadless);
 		}
 
 	}

@@ -39,7 +39,7 @@ public abstract class BrowserUtility {
 	public BrowserUtility(WebDriver driver) {
 		super();
 		this.driver.set(driver); // initialize the instance variable driver
-		wait = new WebDriverWait(driver, Duration.ofSeconds(1000L));
+		wait = new WebDriverWait(driver, Duration.ofSeconds(30L));
 	}
 
 	public BrowserUtility(String browserName) {
